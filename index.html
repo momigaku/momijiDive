@@ -36,10 +36,6 @@ canvas{display:block;width:100%;height:100%}
 <h1 id="t">もみじダイブ</h1>
 <p id="m">宇宙船から落ちた柴犬を動かして、敵をよけながら1500m下のおうちに着地しよう。<br>指（またはキー）で左右に動かせるよ。</p>
 <button id="go">はじめる</button>
-<button id="gl" class="sec">500m地点から（隕石）</button>
-<button id="g2" class="sec">1000m地点から</button>
-<button id="g3" class="sec">ゴールを見る（1500m）</button>
-<button id="g4" class="sec">エンディングだけ見る</button>
 </div>
 </div>
 <script>
@@ -592,7 +588,7 @@ window.addEventListener('keyup',function(e){
   if(e.key==='ArrowLeft'||e.key==='a')keys.L=0;
   if(e.key==='ArrowRight'||e.key==='d')keys.R=0;
 });
-go.addEventListener('click',function(){start(0)});document.getElementById('gl').addEventListener('click',function(){start(1)});document.getElementById('g2').addEventListener('click',function(){start(2)});document.getElementById('g3').addEventListener('click',function(){start(3)});document.getElementById('g4').addEventListener('click',startEnd);
+go.addEventListener('click',function(){start(0)});
 reset();draw();
 })();
 </script>
